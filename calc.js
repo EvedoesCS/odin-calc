@@ -7,18 +7,27 @@ function calculate() {
 
     x = parseInt(x);
     y = parseInt(y);
+    let result = null;
 
     if (operator === '+') {
-        return x + y;
+        result = x + y;
+        chainCalc(result);
+        return result;
     }
     else if (operator === '-') {
-        return x - y;
+        result = x - y;
+        chainCalc(result);
+        return result;
     }
     else if (operator === 'x') {
-        return x * y;
+        result = x * y;
+        chainCalc(result);
+        return result;
     }
     else if (operator === '%') {
-        return x / y;
+        result = x / y;
+        chainCalc(result);
+        return result;
     }
     else {
         return "ERROR";
@@ -31,6 +40,12 @@ function clearValues() {
     y = '';
     operator = '';
     display.textContent = 0;
+}
+
+function chainCalc(result) {
+    x = result;
+    y = '';
+    operator = '';
 }
 
 function updateDisplay() {
