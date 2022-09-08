@@ -24,10 +24,22 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    padding-right: 12px;
 
     background-color: #c2c2c2;
 
     height: 100px;
+    width: 300px;
+}
+
+.calc-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 10px;
+
+    height: 10px;
     width: 300px;
 }
 
